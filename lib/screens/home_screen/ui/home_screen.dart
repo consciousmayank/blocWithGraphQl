@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
             itemCount: state.results.length,
             itemBuilder: (BuildContext context, int index) =>
                 ListTile(
-                  leading: Text(state.results[index].emailId),
+                  subtitle: Text(state.results[index].emailId),
                   title: Text(state.results[index].name),
                   onTap: () {
                     print("Single User data ${state.results[index]}");
